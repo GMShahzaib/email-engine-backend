@@ -2,7 +2,7 @@ import { fetchEmails } from '../services/outlookService.js';
 import { saveEmails } from '../services/elasticsearchService.js';
 import wrapCatchAsyncFunctions from '../utils/catchAsync.js';
 import client from '../config/elasticsearch.js';
-import { SUCCESSFUL } from '../utils/const.values.js';
+import { SUCCESSFUL } from '../utils/constants.js';
 import Env from '../env/Env.js';
 
 

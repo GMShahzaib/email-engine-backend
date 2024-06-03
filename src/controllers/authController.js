@@ -4,7 +4,7 @@ import wrapCatchAsyncFunctions from '../utils/catchAsync.js';
 import oauth2 from '../config/oauth.js';
 import client from '../config/elasticsearch.js';
 
-import { SUCCESSFUL } from '../utils/const.values.js';
+import { SUCCESSFUL } from '../utils/constants.js';
 
 
 class Auth {

@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { SUCCESSFUL } from './utils/const.values.js';
+import { SUCCESSFUL } from './utils/constants.js';
 
 //routes
 import authRouter from './routes/authRoutes.js';
