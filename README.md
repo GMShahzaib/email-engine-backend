@@ -1,7 +1,8 @@
 # email-engine-backend
 
-### API TESTING
-Please start project `npm run dev`, after successful connection with database. please run `npm test` to run test-cases
+### Run Server
+Please start project using `npm start` predefined script if you want to run in prod mode
+Please start project using `npm run dev` predefined script if you want to run in dev mode. project will be run using nodemon
 
 
 ### Structure Breakdown
