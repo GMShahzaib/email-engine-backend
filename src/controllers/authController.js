@@ -2,9 +2,8 @@ import Env from '../env/Env.js';
 import wrapCatchAsyncFunctions from '../utils/catchAsync.js';
 
 import oauth2 from '../config/oauth.js';
-import client from '../config/elasticsearch.js';
 
-import { SUCCESSFUL } from '../utils/constants.js';
+import ApiResponse from '../utils/apiResponse.js';
 
 
 class Auth {
@@ -14,7 +13,7 @@ class Auth {
             scope: 'openid profile offline_access Mail.Read',
             response_type: 'code'
         });
-        resp.status(200).json({ status: SUCCESSFUL, url: authURL });
+        resp.status(200).json(new ApiResponse(200, { url: authURL }));
     }
 
     static async outlookCallback(req, resp) {
@@ -28,7 +27,7 @@ class Auth {
                     return resp.status(500).send('Authentication failed');
                 }
                 const httpOnlyCookieOptions = { httpOnly: true, secure: true }
-                resp.status(200).cookie("accessToken", accessToken, httpOnlyCookieOptions).cookie("refreshToken", refreshToken, httpOnlyCookieOptions).json({ status: SUCCESSFUL, accessToken, refreshToken, userId: params.id_token });
+                resp.status(200).cookie("accessToken", accessToken, httpOnlyCookieOptions).cookie("refreshToken", refreshToken, httpOnlyCookieOptions).json(new ApiResponse(200, { accessToken, refreshToken, userId: params.id_token }));
             }
         );
     };

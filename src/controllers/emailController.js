@@ -2,8 +2,8 @@ import { fetchEmails } from '../services/outlookService.js';
 import { saveEmails } from '../services/elasticsearchService.js';
 import wrapCatchAsyncFunctions from '../utils/catchAsync.js';
 import client from '../config/elasticsearch.js';
-import { SUCCESSFUL } from '../utils/constants.js';
 import Env from '../env/Env.js';
+import ApiResponse from '../utils/apiResponse.js';
 
 
 class Emails {
@@ -15,7 +15,7 @@ class Emails {
 
         const emails = await fetchEmails(token);
         // await saveEmails(emails, req.session.userId); // need to add userId
-        resp.status(401).json({ status: SUCCESSFUL, emails });
+        resp.status(401).json(new ApiResponse(200, { emails }));
     }
 
     static async getEmails(req, resp) {
