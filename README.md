@@ -12,19 +12,15 @@ Please start project `npm run dev`, after successful connection with database. p
 │  │   ├── elasticsearch.js
 │  │   └── oauth.js
 │  │
-│  │
 │  ├── controllers/
 │  │   ├── authController.js
 │  │   └── emailController.js
-│  │
 │  │
 │  ├── env/
 │  │   └── Env.js   (Envs variables are exported for whole app)
 │  │
 │  ├── handler/
 │  │   └── globalError.js
-│  │
-│  │
 │  │
 │  ├── routes/
 │  │   ├── authRoutes.js
