@@ -14,7 +14,7 @@ class Auth {
             scope: 'openid profile offline_access Mail.Read',
             response_type: 'code'
         });
-        resp.status(200).json({ status: SUCCESSFUL, url:authURL});
+        resp.status(200).json({ status: SUCCESSFUL, url: authURL });
     }
 
     static async outlookCallback(req, resp) {
@@ -27,8 +27,8 @@ class Auth {
                     console.log(err);
                     return resp.status(500).send('Authentication failed');
                 }
-
-                resp.status(200).json({ status: SUCCESSFUL, accessToken, refreshToken, userId: params.id_token });
+                const httpOnlyCookieOptions = { httpOnly: true, secure: true }
+                resp.status(200).cookie("accessToken", accessToken, httpOnlyCookieOptions).cookie("refreshToken", refreshToken, httpOnlyCookieOptions).json({ status: SUCCESSFUL, accessToken, refreshToken, userId: params.id_token });
             }
         );
     };

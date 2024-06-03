@@ -8,15 +8,13 @@ import Env from '../env/Env.js';
 
 class Emails {
     static async syncEmails(req, resp, next) {
-        let token = req.headers.authorization
+        let token = req.cookies?.accessToken || (req.header("Authorization") && req.header("Authorization").split(' ')[1])
         if (!token) {
             return resp.status(401).send('Not authenticated');
         }
-        token = token.split(' ')[1]
-
 
         const emails = await fetchEmails(token);
-        await saveEmails(emails, req.session.userId); // need to add userId
+        // await saveEmails(emails, req.session.userId); // need to add userId
         resp.status(401).json({ status: SUCCESSFUL, emails });
     }
 
