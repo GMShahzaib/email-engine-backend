@@ -1,8 +1,8 @@
 # email-engine-backend
 
 ### Run Server
-Please start project using `npm start` predefined script if you want to run in prod mode.
-Please start project using `npm run dev` predefined script if you want to run in dev mode. project will be run using nodemon
+- Please start project using `npm start` predefined script if you want to run in prod mode.
+- Please start project using `npm run dev` predefined script if you want to run in dev mode. project will be run using nodemon
 
 
 ### Structure Breakdown
