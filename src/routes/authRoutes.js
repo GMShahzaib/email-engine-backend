@@ -3,7 +3,7 @@ import Auth from '../controllers/authController.js';
 
 const authRouter = express.Router();
 
-authRouter.get('/auth/outlook', Auth.authOutlook);
-authRouter.get('/callback', Auth.outlookCallback);
+authRouter.get('/outlook', Auth.authOutlook);
+authRouter.get('/outlook/callback', Auth.outlookCallback);
 
 export default authRouter

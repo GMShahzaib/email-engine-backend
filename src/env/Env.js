@@ -3,7 +3,7 @@ dotenv.config();
 
 class Env {
   static PORT = process.env.PORT || '8080';
-  static ENVIRONMENT = "DEVELOPMENT"
+  static ENVIRONMENT = process.env.MODE || "development"
 
   static OUTLOOK = {
     CLIENT_ID: process.env.OUTLOOK_CLIENT_ID || '',

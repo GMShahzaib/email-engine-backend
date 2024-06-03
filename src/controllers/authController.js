@@ -2,6 +2,10 @@ import Env from '../env/Env.js';
 import wrapCatchAsyncFunctions from '../utils/catchAsync.js';
 
 import oauth2 from '../config/oauth.js';
+import client from '../config/elasticsearch.js';
+
+import { SUCCESSFUL } from '../utils/const.values.js';
+
 
 class Auth {
     static async authOutlook(req, resp, next) {
@@ -10,7 +14,7 @@ class Auth {
             scope: 'openid profile offline_access Mail.Read',
             response_type: 'code'
         });
-        resp.redirect(authURL);
+        resp.status(200).json({ status: SUCCESSFUL, url:authURL});
     }
 
     static async outlookCallback(req, resp) {
