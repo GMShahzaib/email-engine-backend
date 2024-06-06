@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "1e384a7a-7442-4397-93d7-c43fe1781f7e",
+		"name": "Email-engine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35977124"
+	},
+	"item": [
+		{
+			"name": "Sync Emails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/emails/sync"
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/emails/sync"
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1068-bWvWYoDJ1R5NN155bJtvJNrtSfY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 19:10:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"emails\": [\n        {\n            \"@odata.etag\": \"W/\\\"CQAAABYAAAD5+oRo/Bf/SKz9YHAcLiRYAAPnuese\\\"\",\n            \"id\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR_IsdhiMAcA_fqEaPwX-0is-WBwHC4kWAAAAgERAAAA_fqEaPwX-0is-WBwHC4kWAADuE6-UgAAAA==\",\n            \"createdDateTime\": \"2024-03-21T17:53:57Z\",\n            \"lastModifiedDateTime\": \"2024-06-03T08:27:36Z\",\n            \"changeKey\": \"CQAAABYAAAD5+oRo/Bf/SKz9YHAcLiRYAAPnuese\",\n            \"categories\": [],\n            \"receivedDateTime\": \"2024-06-03T08:27:35Z\",\n            \"sentDateTime\": \"2024-03-21T17:53:57Z\",\n            \"hasAttachments\": false,\n            \"internetMessageId\": \"<SL2P216MB1545A16AA5623E1BAE5F653EB7322@SL2P216MB1545.KORP216.PROD.OUTLOOK.COM>\",\n            \"subject\": \"title should be enum in basic info\",\n            \"bodyPreview\": \"title should be enum in basic info\\r\\n\\r\\nresource candidate access toggle should be working\\r\\n\\r\\nremove userName\\r\\n\\r\\nchange templete\\r\\n\\r\\nhunesh should change date for Formate DateOfBirth\\r\\n\\r\\nhunesh should remove noteID in user notes\",\n            \"importance\": \"normal\",\n            \"parentFolderId\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgAuAAAD4W6Et93Pkki2aR_IsdhiMAEA_fqEaPwX-0is-WBwHC4kWAAAAgERAAAA\",\n            \"conversationId\": \"AQQkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgAQAOiIAmcwSfqMaMpRJhKsuM4=\",\n            \"conversationIndex\": \"AQHae7i/2OXLuOrwE0qWthG+UuwWhg==\",\n            \"isDeliveryReceiptRequested\": null,\n            \"isReadReceiptRequested\": false,\n            \"isRead\": true,\n            \"isDraft\": false,\n            \"webLink\": \"https://outlook.live.com/owa/?ItemID=AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR%2BIsdhiMAcA%2BfqEaPwX%2F0is%2FWBwHC4kWAAAAgERAAAA%2BfqEaPwX%2F0is%2FWBwHC4kWAADuE6%2FUgAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem\",\n            \"inferenceClassification\": \"focused\",\n            \"body\": {\n                \"contentType\": \"html\",\n                \"content\": \"<html><head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"><style>\\r\\n<!--\\r\\nul\\r\\n\\t{list-style:none}\\r\\nhtml, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, li\\r\\n\\t{margin:0;\\r\\n\\tpadding:0;\\r\\n\\tborder:0;\\r\\n\\toutline:0;\\r\\n\\tfont-size:100%;\\r\\n\\tvertical-align:baseline}\\r\\n-->\\r\\n</style></head><body id=\\\"NotesClientContent\\\"><div><p>title should be enum in basic info</p><p></p><p>resource candidate access toggle should be working</p><p></p><p>remove userName</p><p>change templete</p><p></p><p>hunesh should change date for Formate DateOfBirth</p><p></p><p>hunesh should remove noteID in user notes</p></div></body></html>\"\n            },\n            \"toRecipients\": [],\n            \"ccRecipients\": [],\n            \"bccRecipients\": [],\n            \"replyTo\": [],\n            \"flag\": {\n                \"flagStatus\": \"notFlagged\"\n            }\n        },\n        {\n            \"@odata.etag\": \"W/\\\"CQAAABYAAAD5+oRo/Bf/SKz9YHAcLiRYAANM2eHq\\\"\",\n            \"id\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR_IsdhiMAcA_fqEaPwX-0is-WBwHC4kWAAAAgERAAAA_fqEaPwX-0is-WBwHC4kWAADTNWYwQAAAA==\",\n            \"createdDateTime\": \"2023-10-10T14:17:39Z\",\n            \"lastModifiedDateTime\": \"2023-10-10T14:17:42Z\",\n            \"changeKey\": \"CQAAABYAAAD5+oRo/Bf/SKz9YHAcLiRYAANM2eHq\",\n            \"categories\": [],\n            \"receivedDateTime\": \"2023-10-10T14:17:42Z\",\n            \"sentDateTime\": \"2023-10-10T14:17:39Z\",\n            \"hasAttachments\": false,\n            \"internetMessageId\": \"<SL2P216MB154547A1CA02E2B309B31698B7CDA@SL2P216MB1545.KORP216.PROD.OUTLOOK.COM>\",\n            \"subject\": \"\",\n            \"bodyPreview\": \"\",\n            \"importance\": \"normal\",\n            \"parentFolderId\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgAuAAAD4W6Et93Pkki2aR_IsdhiMAEA_fqEaPwX-0is-WBwHC4kWAAAAgERAAAA\",\n            \"conversationId\": \"AQQkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgAQANQdjNmPALIE6YAJmOz4Qn4=\",\n            \"conversationIndex\": \"AQHZ+4SGipJzKIc+CU2DeQEElN0AGA==\",\n            \"isDeliveryReceiptRequested\": null,\n            \"isReadReceiptRequested\": false,\n            \"isRead\": true,\n            \"isDraft\": false,\n            \"webLink\": \"https://outlook.live.com/owa/?ItemID=AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR%2BIsdhiMAcA%2BfqEaPwX%2F0is%2FWBwHC4kWAAAAgERAAAA%2BfqEaPwX%2F0is%2FWBwHC4kWAADTNWYwQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem\",\n            \"inferenceClassification\": \"focused\",\n            \"body\": {\n                \"contentType\": \"html\",\n                \"content\": \"<html><head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"><style>\\r\\n<!--\\r\\nul\\r\\n\\t{list-style:none}\\r\\nhtml, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, li\\r\\n\\t{margin:0;\\r\\n\\tpadding:0;\\r\\n\\tborder:0;\\r\\n\\toutline:0;\\r\\n\\tfont-size:100%;\\r\\n\\tvertical-align:baseline}\\r\\n-->\\r\\n</style></head><body id=\\\"NotesClientContent\\\"><div><p></p></div></body></html>\"\n            },\n            \"toRecipients\": [],\n            \"ccRecipients\": [],\n            \"bccRecipients\": [],\n            \"replyTo\": [],\n            \"flag\": {\n                \"flagStatus\": \"notFlagged\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Outlook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/auth/outlook"
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/auth/outlook"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"135-LF9Cc/Kmf3+nWmZ52g7DlHGzVDQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jun 2024 20:10:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"url\": \"https://login.microsoftonline.com/common/oauth2/v2.0/authorize?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&scope=openid%20profile%20User.Read%20offline_access%20Mail.Read&response_type=code&client_id=52f198de-4d6f-4621-b010-d86e664e4daf\"\n    },\n    \"message\": \"Success\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Outlook Callback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/auth/outlook/callback?code=M.C531_BL2.2.U.75394f5d-607a-3fd5-d7c7-d688dccc6655",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth",
+						"outlook",
+						"callback"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "M.C531_BL2.2.U.75394f5d-607a-3fd5-d7c7-d688dccc6655"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/auth/outlook/callback?code=M.C531_BAY.2.U.05f8d165-7dff-0759-0d3a-674140372ea6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"outlook",
+								"callback"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "M.C531_BAY.2.U.05f8d165-7dff-0759-0d3a-674140372ea6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4MjU4LCJleHAiOjE3MTc2MjE4NTh9.khw3OIqKHh_vWXmAQwuDZSJN9_AN1UZfTYoSw8cr7SA; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4MjU4LCJleHAiOjE3MTc3MDEwNTh9.Y4wzhuCz5m_rNy9ZxLjVIaXM7s5I7Bb5CkCL_Wl-nPw; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "outlookAccessToken=EwB4A8l6BAAUbDba3x2OMJElkF7gJ4z%2FVbCPEz0AASCATFBEnUVRib9XNU2Az1zGEiTAIeng3CGYnYilg1L3SZtgJihNql6yNaaCRRduEKJjBVwgPW%2BiXrf7GeTFFoR5kzaEfB8JQzCr1PfumOfYdVhC6a56LBZeag8QZH9FbVAO6r5Fal64mRunHCSsnYDl49drmCjnpXbQqQ3dRZHYmGH1kWGhjc4IasVdUsWx4yJ8enX4I6WP0TP1P0j1lY1cy7hqbnmK95SbC8yBqPD9thv6ARdZfJvw1KDBg%2FHRKFu0qiD5Tcqi4P478TuGBDnLI3gpOQmX1nLzjgBdDjfglm28xFgwz3Wp5l5vbShol8sz%2BOwKhOe6X410s4mM3mEDZgAACLdWwbI%2FApzjSALtyKqME43B4JmlN9Sx2wChlq0S5ejRYpCKER90Ng29oFM%2FKrfBM3AkitPlvJ%2BN8gGUjRICjCRSMvI0BlsimSg2b1zwCBaipZF03scA0W7YO1lzW8UtHQqAW9QwmMCnDNZUeuK6szJMTW1dJR3T8aN5UtQcJTOiPkHjUKn%2B7b87QwHUb01VQx58cX8FgTsls3GpYbuHO7Yficq6X%2Bv7FW669p5zNc1K9KRd39Dtdrdbt%2FzIVpTaedWKB2wFd%2BqpcEpeEJHq%2BFQgKoA2lyWoyKeX0IfKAA9tGPUV29Ih%2FLn%2BEpf34MBXZXourrtW5TgCA16Ncd7ThtyyDthZZREAj5an4ajLBmdpkNeP3gn8OCwIIqZ%2BTeXyOiw1cuA4Hzu30ethHUiV1hBNlEEi4fe33t%2F%2BO0ms4VD98GMqAm8BD8%2BCohx%2FSLeSo5un5xobogPgIBKMjmrZxuH9EactrFia1xtuGDmdy6hZVmEblLWrwcqu6WJBXjbnd8dlImYrLSS7Uv1teMQ7Q1jJsf2jbLaywimMqY51vkY1nLFWujDIixLPZNVhtst4rF4hfQRK6WbXFMm5pzXMKUeSOBRZVeOw%2Ffkobv%2B5LmmyVONOD0p87X%2FJsSlyIHArhMtAgJ6Nbv6x1M7CbfUTdCKK%2FiQF042CMGGC8KrJc0zTFVrxE94ILNjsDzO3fbpFohKFUxgJ710bCgnBS74PM4%2Frp1S44Orc16y3tlR6TT2rr3Z6Y3SImwW%2B8X0b4yQeW1qPmsYbIXUwttBJ%2BaF%2Ffr6hI44C; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "outlookRefreshToken=M.C531_BAY.0.U.-CkY06GEimow3wohExRdWVtNH0cSbA5M7nexpMR6bZSRNILBbn3FXYCTgQKO!7HKt6B*3Jyxbol57f2SJzlqvpA7oTiNUbvPmQs0mxymaI*wJ2ZSz1ifs!WOtF4JhcY6h8p0U3XkoOzPVwbutVHiVoHuoazSHXPLyQLLH0KsDeFfbZJq63IgG!HxJEPVtIliGvH6zWlP39crAq6G1OT7cCZvlNbN4GV1xqiLBlJ2IlNPS1Z9FN7CZbP4KMRafU9Bmpu1EPieCfHhm0mm6d!SZjAP!*rMm0CYu7TE1B*bSCoYPIbicG9YMjHAPPc!V9MhLyU2Kf7AmJqE3Bkw4xPQlYPm6ga*Ewzn9WnInebLugCKdHsoSDRo5yMhKaw8VsGJEaA%24%24; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4750"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"128e-TdWy7pJgxA9N8w1+3vWVggb5aaE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jun 2024 20:10:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"user\": {\n            \"email\": \"mirzashahzaib703@gmail.com\",\n            \"password\": \"$2a$10$0rZGfUx.RylhYvlieIaXlekOTaWsVX2GI2CwRo89LzU56ysCfmMBO\",\n            \"createdAt\": \"2024-06-05T19:39:59.347Z\",\n            \"updatedAt\": \"2024-06-05T20:10:57.583Z\",\n            \"outlookId\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlNQODlCMFZZV1NmZmJuT2N2aGtZQm1QZG8zTSJ9.eyJ2ZXIiOiIyLjAiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkL3YyLjAiLCJzdWIiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFGSjFwTVRGcFl1dXQyVmRjUXhVR0g0IiwiYXVkIjoiNTJmMTk4ZGUtNGQ2Zi00NjIxLWIwMTAtZDg2ZTY2NGU0ZGFmIiwiZXhwIjoxNzE3NzA0NjUzLCJpYXQiOjE3MTc2MTc5NTMsIm5iZiI6MTcxNzYxNzk1MywibmFtZSI6IlNoYWh6YWliIE11bXRheiIsInByZWZlcnJlZF91c2VybmFtZSI6Im1pcnphc2hhaHphaWI3MDNAZ21haWwuY29tIiwib2lkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTI2NzQtODFhODVlNDY4YWVkIiwidGlkIjoiOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIiwiYWlvIjoiRG5ZV2sxUE96dVBUZ1ZqbjlRM0tUOSpUdmJmYTdvIU1EcU1qcXhxcmhGKlBLVVVIcG5ZZHB5UTBGYVdaRHl4QjhKT1dEa0R2SlpITmlsQkdnNmwhMkQ0Q1k2WDIxZEZnV24wdHdFKipkTlhDWUNiUlN3a2lYVEVxMThaR3lNVldzNCFWQ0RZdW1DOTNrS0FkY1FFZzEwTipMcTdEbypoS2drNDdWTks0NEgyTCJ9.UVgZofKrMxyse8eIIi1L1ea1CSkAV_pBrnf2QLpjRGF4_kZ9QJnJTXI7amdtqx1ZcAiGf9nXZpZszHK4LASh2IR7nqrPf0MNobswxkPmvWNtJOqT7E5O6jAuwFBGRhfMAMbVEttZ6cjG8Rv0rI-xfst7zowFrOE2nEtBeh8nrB5buYFnYT3DZbiq2cy3Hl2WiTsQhQdW4mZDK3afa4HI_zrXyW-7dTUwaGcEbwW_xuaQ2HraG45Zp4xzlWFRfOo-1YKObSoO8S4H4p1hxBzl6TrIDQFsdYdgAkRRcojT7oc3SVFApusDrzrDt9QAyAua5j9HBAWCcYiYeriyZ4rivA\",\n            \"_id\": \"Y_nq6Y8Bp3zH62sXTxRd\"\n        },\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4MjU4LCJleHAiOjE3MTc2MjE4NTh9.khw3OIqKHh_vWXmAQwuDZSJN9_AN1UZfTYoSw8cr7SA\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4MjU4LCJleHAiOjE3MTc3MDEwNTh9.Y4wzhuCz5m_rNy9ZxLjVIaXM7s5I7Bb5CkCL_Wl-nPw\",\n        \"outlookAccessToken\": \"EwB4A8l6BAAUbDba3x2OMJElkF7gJ4z/VbCPEz0AASCATFBEnUVRib9XNU2Az1zGEiTAIeng3CGYnYilg1L3SZtgJihNql6yNaaCRRduEKJjBVwgPW+iXrf7GeTFFoR5kzaEfB8JQzCr1PfumOfYdVhC6a56LBZeag8QZH9FbVAO6r5Fal64mRunHCSsnYDl49drmCjnpXbQqQ3dRZHYmGH1kWGhjc4IasVdUsWx4yJ8enX4I6WP0TP1P0j1lY1cy7hqbnmK95SbC8yBqPD9thv6ARdZfJvw1KDBg/HRKFu0qiD5Tcqi4P478TuGBDnLI3gpOQmX1nLzjgBdDjfglm28xFgwz3Wp5l5vbShol8sz+OwKhOe6X410s4mM3mEDZgAACLdWwbI/ApzjSALtyKqME43B4JmlN9Sx2wChlq0S5ejRYpCKER90Ng29oFM/KrfBM3AkitPlvJ+N8gGUjRICjCRSMvI0BlsimSg2b1zwCBaipZF03scA0W7YO1lzW8UtHQqAW9QwmMCnDNZUeuK6szJMTW1dJR3T8aN5UtQcJTOiPkHjUKn+7b87QwHUb01VQx58cX8FgTsls3GpYbuHO7Yficq6X+v7FW669p5zNc1K9KRd39Dtdrdbt/zIVpTaedWKB2wFd+qpcEpeEJHq+FQgKoA2lyWoyKeX0IfKAA9tGPUV29Ih/Ln+Epf34MBXZXourrtW5TgCA16Ncd7ThtyyDthZZREAj5an4ajLBmdpkNeP3gn8OCwIIqZ+TeXyOiw1cuA4Hzu30ethHUiV1hBNlEEi4fe33t/+O0ms4VD98GMqAm8BD8+Cohx/SLeSo5un5xobogPgIBKMjmrZxuH9EactrFia1xtuGDmdy6hZVmEblLWrwcqu6WJBXjbnd8dlImYrLSS7Uv1teMQ7Q1jJsf2jbLaywimMqY51vkY1nLFWujDIixLPZNVhtst4rF4hfQRK6WbXFMm5pzXMKUeSOBRZVeOw/fkobv+5LmmyVONOD0p87X/JsSlyIHArhMtAgJ6Nbv6x1M7CbfUTdCKK/iQF042CMGGC8KrJc0zTFVrxE94ILNjsDzO3fbpFohKFUxgJ710bCgnBS74PM4/rp1S44Orc16y3tlR6TT2rr3Z6Y3SImwW+8X0b4yQeW1qPmsYbIXUwttBJ+aF/fr6hI44C\",\n        \"outlookRefreshToken\": \"M.C531_BAY.0.U.-CkY06GEimow3wohExRdWVtNH0cSbA5M7nexpMR6bZSRNILBbn3FXYCTgQKO!7HKt6B*3Jyxbol57f2SJzlqvpA7oTiNUbvPmQs0mxymaI*wJ2ZSz1ifs!WOtF4JhcY6h8p0U3XkoOzPVwbutVHiVoHuoazSHXPLyQLLH0KsDeFfbZJq63IgG!HxJEPVtIliGvH6zWlP39crAq6G1OT7cCZvlNbN4GV1xqiLBlJ2IlNPS1Z9FN7CZbP4KMRafU9Bmpu1EPieCfHhm0mm6d!SZjAP!*rMm0CYu7TE1B*bSCoYPIbicG9YMjHAPPc!V9MhLyU2Kf7AmJqE3Bkw4xPQlYPm6ga*Ewzn9WnInebLugCKdHsoSDRo5yMhKaw8VsGJEaA$$\",\n        \"userId\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlNQODlCMFZZV1NmZmJuT2N2aGtZQm1QZG8zTSJ9.eyJ2ZXIiOiIyLjAiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkL3YyLjAiLCJzdWIiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFGSjFwTVRGcFl1dXQyVmRjUXhVR0g0IiwiYXVkIjoiNTJmMTk4ZGUtNGQ2Zi00NjIxLWIwMTAtZDg2ZTY2NGU0ZGFmIiwiZXhwIjoxNzE3NzA0NjUzLCJpYXQiOjE3MTc2MTc5NTMsIm5iZiI6MTcxNzYxNzk1MywibmFtZSI6IlNoYWh6YWliIE11bXRheiIsInByZWZlcnJlZF91c2VybmFtZSI6Im1pcnphc2hhaHphaWI3MDNAZ21haWwuY29tIiwib2lkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTI2NzQtODFhODVlNDY4YWVkIiwidGlkIjoiOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIiwiYWlvIjoiRG5ZV2sxUE96dVBUZ1ZqbjlRM0tUOSpUdmJmYTdvIU1EcU1qcXhxcmhGKlBLVVVIcG5ZZHB5UTBGYVdaRHl4QjhKT1dEa0R2SlpITmlsQkdnNmwhMkQ0Q1k2WDIxZEZnV24wdHdFKipkTlhDWUNiUlN3a2lYVEVxMThaR3lNVldzNCFWQ0RZdW1DOTNrS0FkY1FFZzEwTipMcTdEbypoS2drNDdWTks0NEgyTCJ9.UVgZofKrMxyse8eIIi1L1ea1CSkAV_pBrnf2QLpjRGF4_kZ9QJnJTXI7amdtqx1ZcAiGf9nXZpZszHK4LASh2IR7nqrPf0MNobswxkPmvWNtJOqT7E5O6jAuwFBGRhfMAMbVEttZ6cjG8Rv0rI-xfst7zowFrOE2nEtBeh8nrB5buYFnYT3DZbiq2cy3Hl2WiTsQhQdW4mZDK3afa4HI_zrXyW-7dTUwaGcEbwW_xuaQ2HraG45Zp4xzlWFRfOo-1YKObSoO8S4H4p1hxBzl6TrIDQFsdYdgAkRRcojT7oc3SVFApusDrzrDt9QAyAua5j9HBAWCcYiYeriyZ4rivA\"\n    },\n    \"message\": \"Success\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"email\":\"mirzashahzaib703@gmail.com\",\r\n \"password\":\"testing123\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/auth/register"
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"email\":\"mirzashahzaib703@gmail.com\",\r\n \"password\":\"testing123\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/auth/register"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "289"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"121-hQjlzYM5efVqMD0Xkpi5cNe+eRY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jun 2024 19:39:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"user\": {\n            \"email\": \"mirzashahzaib703@gmail.com\",\n            \"password\": \"$2a$10$0rZGfUx.RylhYvlieIaXlekOTaWsVX2GI2CwRo89LzU56ysCfmMBO\",\n            \"createdAt\": \"2024-06-05T19:39:59.347Z\",\n            \"updatedAt\": \"2024-06-05T19:39:59.347Z\",\n            \"_id\": \"Y_nq6Y8Bp3zH62sXTxRd\"\n        }\n    },\n    \"message\": \"Success\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"email\":\"mirzashahzaib703@gmail.com\",\r\n \"password\":\"testing123\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/auth/login"
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"email\":\"mirzashahzaib703@gmail.com\",\r\n \"password\":\"testing123\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/auth/login"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4Mjk1LCJleHAiOjE3MTc2MjE4OTV9.rHnZQoiZQwiNm2yaOgHNWwEHrXrhO6C1K8IWjL_cKmY; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4Mjk1LCJleHAiOjE3MTc3MDEwOTV9.u4268IK4LhSiZIhlKP6VPMoxwVLvsCvpUdgLjur2_9w; Path=/; HttpOnly; Secure"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1885"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75d-pWp1g4isXO8/oOfOzNdEek85Vvs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jun 2024 20:11:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"user\": {\n            \"email\": \"mirzashahzaib703@gmail.com\",\n            \"password\": \"$2a$10$0rZGfUx.RylhYvlieIaXlekOTaWsVX2GI2CwRo89LzU56ysCfmMBO\",\n            \"createdAt\": \"2024-06-05T19:39:59.347Z\",\n            \"updatedAt\": \"2024-06-05T20:10:57.583Z\",\n            \"outlookId\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlNQODlCMFZZV1NmZmJuT2N2aGtZQm1QZG8zTSJ9.eyJ2ZXIiOiIyLjAiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkL3YyLjAiLCJzdWIiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFGSjFwTVRGcFl1dXQyVmRjUXhVR0g0IiwiYXVkIjoiNTJmMTk4ZGUtNGQ2Zi00NjIxLWIwMTAtZDg2ZTY2NGU0ZGFmIiwiZXhwIjoxNzE3NzA0NjUzLCJpYXQiOjE3MTc2MTc5NTMsIm5iZiI6MTcxNzYxNzk1MywibmFtZSI6IlNoYWh6YWliIE11bXRheiIsInByZWZlcnJlZF91c2VybmFtZSI6Im1pcnphc2hhaHphaWI3MDNAZ21haWwuY29tIiwib2lkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTI2NzQtODFhODVlNDY4YWVkIiwidGlkIjoiOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIiwiYWlvIjoiRG5ZV2sxUE96dVBUZ1ZqbjlRM0tUOSpUdmJmYTdvIU1EcU1qcXhxcmhGKlBLVVVIcG5ZZHB5UTBGYVdaRHl4QjhKT1dEa0R2SlpITmlsQkdnNmwhMkQ0Q1k2WDIxZEZnV24wdHdFKipkTlhDWUNiUlN3a2lYVEVxMThaR3lNVldzNCFWQ0RZdW1DOTNrS0FkY1FFZzEwTipMcTdEbypoS2drNDdWTks0NEgyTCJ9.UVgZofKrMxyse8eIIi1L1ea1CSkAV_pBrnf2QLpjRGF4_kZ9QJnJTXI7amdtqx1ZcAiGf9nXZpZszHK4LASh2IR7nqrPf0MNobswxkPmvWNtJOqT7E5O6jAuwFBGRhfMAMbVEttZ6cjG8Rv0rI-xfst7zowFrOE2nEtBeh8nrB5buYFnYT3DZbiq2cy3Hl2WiTsQhQdW4mZDK3afa4HI_zrXyW-7dTUwaGcEbwW_xuaQ2HraG45Zp4xzlWFRfOo-1YKObSoO8S4H4p1hxBzl6TrIDQFsdYdgAkRRcojT7oc3SVFApusDrzrDt9QAyAua5j9HBAWCcYiYeriyZ4rivA\",\n            \"_id\": \"Y_nq6Y8Bp3zH62sXTxRd\"\n        },\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4Mjk1LCJleHAiOjE3MTc2MjE4OTV9.rHnZQoiZQwiNm2yaOgHNWwEHrXrhO6C1K8IWjL_cKmY\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllfbnE2WThCcDN6SDYyc1hUeFJkIiwiaWF0IjoxNzE3NjE4Mjk1LCJleHAiOjE3MTc3MDEwOTV9.u4268IK4LhSiZIhlKP6VPMoxwVLvsCvpUdgLjur2_9w\"\n    },\n    \"message\": \"Success\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "emails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/emails"
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1671"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"687-+U4HXQdTxuDTFxp8X5+6vijlevE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Jun 2024 09:43:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"emails\": [\n            {\n                \"_index\": \"emails\",\n                \"_id\": \"ZfnY7I8Bp3zH62sX3BT3\",\n                \"_score\": 0.18232156,\n                \"_source\": {\n                    \"userId\": \"Y_nq6Y8Bp3zH62sXTxRd\",\n                    \"messageId\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR_IsdhiMAcA_fqEaPwX-0is-WBwHC4kWAAAAgEJAAAA_fqEaPwX-0is-WBwHC4kWAAD6onZXgAAAA==\",\n                    \"subject\": \"test\",\n                    \"sender\": \"outlook_267481A85E468AED@outlook.com\",\n                    \"body\": \"<html><head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"><style type=\\\"text/css\\\" style=\\\"display:none\\\">\\r\\n<!--\\r\\np\\r\\n\\t{margin-top:0;\\r\\n\\tmargin-bottom:0}\\r\\n-->\\r\\n</style></head><body dir=\\\"ltr\\\"><div class=\\\"elementToProof\\\" style=\\\"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\\\"><br></div></body></html>\",\n                    \"date\": \"2024-06-06T09:06:58Z\"\n                }\n            },\n            {\n                \"_index\": \"emails\",\n                \"_id\": \"ZvnY7I8Bp3zH62sX3hQL\",\n                \"_score\": 0.18232156,\n                \"_source\": {\n                    \"userId\": \"Y_nq6Y8Bp3zH62sXTxRd\",\n                    \"messageId\": \"AQMkADAwATNiZmYAZC0yYTk1LTk1ZjUtMDACLTAwCgBGAAAD4W6Et93Pkki2aR_IsdhiMAcA_fqEaPwX-0is-WBwHC4kWAAAAgEJAAAA_fqEaPwX-0is-WBwHC4kWAAD6onZXQAAAA==\",\n                    \"subject\": \"test subject\",\n                    \"sender\": \"outlook_267481A85E468AED@outlook.com\",\n                    \"body\": \"<html><head>\\r\\n<meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"><style type=\\\"text/css\\\" style=\\\"display:none\\\">\\r\\n<!--\\r\\np\\r\\n\\t{margin-top:0;\\r\\n\\tmargin-bottom:0}\\r\\n-->\\r\\n</style></head><body dir=\\\"ltr\\\"><div class=\\\"elementToProof\\\" style=\\\"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\\\">Test content</div></body></html>\",\n                    \"date\": \"2024-06-06T09:00:04Z\"\n                }\n            }\n        ]\n    },\n    \"message\": \"Success\",\n    \"success\": true\n}"
+				}
+			]
+		}
+	]
+}

@@ -3,7 +3,7 @@ import Emails from '../controllers/emailController.js';
 
 const emailRouter = express.Router();
 
+emailRouter.get('/', Emails.getEmails);
 emailRouter.get('/sync', Emails.syncEmails);
-emailRouter.get('/emails', Emails.getEmails);
 
 export default emailRouter

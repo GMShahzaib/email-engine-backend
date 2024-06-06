@@ -149,7 +149,7 @@ export async function addUser(user) {
 export const saveEmails = async (emails, userId) => {
     for (const email of emails) {
         await client.index({
-            index: Env.ELASTIC.INDEXES.EMAILS,
+            index: EMAIL_INDEX,
             body: {
                 userId,
                 messageId: email.id,
@@ -161,3 +161,17 @@ export const saveEmails = async (emails, userId) => {
         });
     }
 };
+
+// Function to get user by email
+export async function getEmails(userId) {
+    const { hits } = await client.search({
+        index: EMAIL_INDEX,
+        body: {
+            query: {
+                term: { "userId": userId }
+            }
+        }
+    });
+
+    return [null, hits.hits];
+}
