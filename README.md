@@ -24,7 +24,7 @@
 ### Structure Breakdown
 
 ```text
-├── src/
+├── devs/
 │  ├── Email-engine.postman_collection.json (Postman collection)
 │  ├── email_engin.drawio
 │  └── email_engine.drawio.png
