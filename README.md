@@ -1,6 +1,11 @@
 # email-engine-backend
 
 
+### (Postman) Documentation
+We are included the postmen collection in the code devs directory.
+To get postmen collection:
+- Goto [postman collection](./devs/Email-engine.postman_collection.json)
+
 
 ### ENV(s)
 - PORT *(server port number)*
